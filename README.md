@@ -39,4 +39,6 @@ Click on the puzzle icon in the top right corner of your chrome window
 
 Click the pin next to the Liam logo to pin it to your chrome window
 
+And you're all set!
 
+Click on the Liam icon, set the filename and hit submit, and all your tabs will close and a new file containing all of the open tab urls will be generated 
