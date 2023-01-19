@@ -19,7 +19,7 @@ submitBtn.addEventListener("click", function () {
         function closeTabs(tabs) {
             var tabUrls = tabs.map(x => { return x.url }).join('\n')
             var tabIds = tabs.map(x => { return x.id })
-            chrome.downloads.download({ url: 'data:text/plain;base64,' + btoa(tabUrls), filename: `Treats/${m.getFullYear()}/${m.toLocaleString('default', { month: 'long' })}/${m.getDate()}/${formattedFileName}.txt` }, (id) => {
+            chrome.downloads.download({ url: 'data:text/plain;base64,' + btoa(tabUrls), filename: `Treats/${formattedFileName}.txt` }, (id) => {
                 chrome.tabs.remove(tabIds)
             })
         }
